@@ -10,34 +10,32 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            Stack<string> pila = new Stack<string>();
-
-            pila.Push("hola");
-            pila.Push("buenas");
-            pila.Push("tardes,");
-            pila.Push("adios");
-            pila.Push("a todos.");
-
-            pila.Pop(); // pop quitar un elemento
-
-
-            Console.WriteLine("Primer elemento: " + pila.Peek()); // peek = saber cual es el primer elemento de la pila
-            
-            pila.Clear();
-
-            pila.
-
-            Console.WriteLine("Numero elementos: " + pila.Count); // count = saber el numero de elementos de la pila
-            
-            //Console.WriteLine("mmmdmdmd" + pila.ToArray());
-
-            foreach (string p in pila)
+            //coleccion que almacena elementos de forma LIFO
+            Stack<int> num = new Stack<int>();
+            foreach (int numero in new int[] { 2, 4, 6, 8, 10 })
             {
-                Console.WriteLine(p);
+                num.Push(numero);
+
             }
 
-            Console.WriteLine("\npresione una tecla para seguir");
-            Console.ReadLine();
+            Console.WriteLine("\nRecorriendo la pila");
+
+            foreach(int numero in num)
+            {
+                Console.WriteLine("\n" + numero);
+            }
+
+            Console.WriteLine("\nEliminar un elemento");
+
+            num.Pop();
+
+            foreach(int numero in num)
+            {
+                Console.WriteLine("\n" + numero);
+            }
+
+            Console.WriteLine("\nPrecione una tecla para salir");
+            Console.ReadKey();
         }
     }
 }
