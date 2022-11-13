@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(243, 245, 218);
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
