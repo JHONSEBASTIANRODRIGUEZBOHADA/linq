@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="_img/nomina.jpg">
+    <title>Nomina</title>
+</head>
+<body>
+    <div class="nomina">
+        <h1>Nomina</h1>
+        <form action="second_page.html" method="get">
+            <label for="name">Nombres</label><br>
+            <input type="text" id="name" name="name" required placeholder="" autofocus pattern="[A-Za-z0-9]{5,12}"><br><br>
+
+
+            <label for="apellido">Apellidos</label><br>
+            <input type="text" id="apellido" name="apellido" required placeholder="" pattern="[A-Za-z0-9]{5,12}"><br><br>
+
+
+            <label for="documento">Numero de documento</label><br>
+            <input type="number" id="documento" name="documento" required placeholder="" pattern="[0-9]"><br><br>
+
+
+            <label for="salario">Salario</label><br>
+            <input type="number" id="salario" name="salario" required placeholder="" pattern="[0-9]" min="1000000" max="5000000"><br><br>
+
+
+            <label for="diasTrabajados">Dias trabajados</label><br>
+            <input type="number" id="diasTrabajados" name="diasTrabajados" required placeholder="" pattern="[0-9]" min="0" max="365"><br><br>
+
+
+            <label for="totalDevengado">Total devengado</label><br>
+            <input type="number" id="totalDevengado" name="totalDevengado" required placeholder="" pattern="[0-9]" min="0" max="365"><br><br>
+
+
+            <label for="auxilioTransporte">Auxilio transporte</label><br>
+            <input type="number" id="auxilioTransporte" name="auxilioTransporte" required placeholder="" pattern="[0-9]" ><br><br>
+
+            <input type="submit" value="Enviar" src=""><br>
+        </form>
+    </div>
+</body>
+</html>

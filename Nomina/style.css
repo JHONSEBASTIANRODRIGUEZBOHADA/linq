@@ -1,0 +1,22 @@
+
+.login,.registro{
+    background-color: lightblue;
+    text-align: center;
+}
+.nomina{
+    background-color: lightblue;
+    text-align: center;
+}
+.Ingresar{
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.Ingresar:hover{
+    background-color: white;
+    color: black;
+}
+input{width: 170px;}
+
