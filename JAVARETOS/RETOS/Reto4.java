@@ -81,6 +81,9 @@ public class Reto4 {
                     break;
                 }
                 break;
+                default:
+                    System.out.println("No ingreso un valor correcto");
+                break;
         }
         scanner.close();
     }
